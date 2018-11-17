@@ -1,0 +1,27 @@
+
+#Create a program that asks the user to enter their name and their age.
+#Print out a message addressed to them that tells them the year that they will turn 100 years old.
+#(optional)    1) Add on to the previous program by asking the user for another number and printing out 
+#                 that many copies of the previous message. 
+#              2) Print out that many copies of the previous message on separate lines. 
+
+
+import datetime
+
+try:
+    print("What is your name")
+    name = input("")
+
+    print("What is your age")
+    age = 100 - int(input(""))
+
+    Personal_Century = datetime.datetime.now()
+    print(Personal_Century.year + age)
+
+    This_many = int(input("How many copies do you need \n"))
+
+    for i in range(This_many):
+        print("not bad for my first solution")
+
+except ValueError:
+    print("No funny business, age and numbers only")
